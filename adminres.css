@@ -1,0 +1,107 @@
+body{
+    
+    background-size: cover;
+    
+    background-image:linear-gradient(rgb(0,0,0,0.3),rgb(0,0,0,0.3)), url(img/b4.jpg);
+    
+    background-size: cover;
+}
+.logo img
+{  
+    float: left;
+    margin-top: 0px;
+    height: 90px;
+    margin-left: 20px;
+    
+}
+.l2
+{
+    font-size: 55px;
+    text-align: bottom;
+    color: white;
+    float: right;
+    margin-right: 250px;
+    margin-top: 10px;
+    font-style: italic;
+    
+    
+    
+}
+.online
+{
+     background-color: rgba(0,0,0,0.6);
+    height: 90px;
+    width: 1250px;
+    margin-top: 0px;
+    
+}
+.btn3 input[type="button"]
+{
+    height: 40px;
+    width: 130px;
+    background:  #1c8adb;
+    color: white;
+    font-size: 20px;
+    margin-top: 2px;
+    cursor: pointer
+}
+.btn3 input[type="button"]:hover
+{
+background: white;
+    color: black;
+}
+.subject
+{
+    background-color: rgba(0,0,0,0.6);
+    height: 140px;
+    width: 740px;
+    margin-top: 170px;
+    margin-left: 250px;
+    font-size: 30px;
+    color: white;
+    text-align: inherit;
+    font-variant-position: normal;
+}
+
+
+#option
+{
+    height: 30px;
+    width: 280px;
+    margin-left: 50px;
+    margin-top: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    background: transparent;
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+.subject input[type="button"]
+{
+  border: none;
+    outline: none;
+    height: 35px;
+    background: #1c8adb;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 170px;
+    margin-left: 270px;
+    margin-top: 20px;
+}
+.subject input[type="button"]:hover
+{
+  border: none;
+    outline: none;
+    height: 35px;
+    background: #39dc79;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 170px;
+    margin-left: 270px;
+    margin-top: 20px;
+}

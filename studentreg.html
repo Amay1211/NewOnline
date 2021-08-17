@@ -1,0 +1,303 @@
+<html>
+<head>
+    <title>studentRegistration</title>
+     
+    <style>
+        .img{
+    
+    background-size: cover;
+    
+    background-image:linear-gradient(#f093fb,#f5576c,#4facfe);
+    
+    background-size: cover;
+            border: 3px solid black;
+            height: 670px;
+}
+.logo img
+{  
+    float: left;
+    margin-top: 0px;
+    height: 90px;
+    margin-left: 20px;
+    
+}
+.online
+{
+     background-color: rgba(0,0,0,0.6);
+    height: 90px;
+    width: 1244px;
+    margin-top: 0px;
+    
+}
+.l2
+{
+    font-size: 45px;
+    text-align: bottom;
+    color: white;
+    float: right;
+    margin-right: 250px;
+    margin-top: 10px;
+    font-style: italic;
+    
+    
+    
+}
+.l2 h2
+            {
+                font-size: 20px;
+                margin-top: 0px;
+                margin-left: 120px;
+                color: white;
+            }
+input[type="button"]
+{
+    height: 40px;
+    width: 200px;
+    margin-top: 2px;
+    cursor: pointer;
+    color: white;
+    background: blue ;
+    font-size: 20px;
+    border: none;
+    margin-left: 5px;
+}
+input[type="button"]:hover
+{
+    color: black;
+    background: white;
+}
+h1
+{
+    margin-top: 15px;
+    margin-left: 230px;
+    color: white;
+    font-size: 40px;
+}
+.reg{
+    width: 1200px;
+    height: 480px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    margin-top: 140px;
+}
+.reg input[type="text"]
+{
+    font-size: 20px;
+    margin-left: 40px;
+    width: 300px;
+    height: 40px;
+    text-align: center;
+     border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    color: white;
+    margin-top: 20px;
+    
+    
+   
+}
+        .reg input[type="date"]
+{
+    font-size: 20px;
+    margin-left: 40px;
+    width: 300px;
+    height: 40px;
+    text-align: center;
+     border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    color: white;
+    margin-top: 20px;
+    
+    
+   
+}
+
+.reg input[type="submit"]
+{
+    margin-left: 400px;
+    height: 50px;
+    width: 300px;
+     background: transparent;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+   
+}
+.reg input[type="submit"]:hover
+{
+     margin-left: 400px;
+    height: 50px;
+    width: 300px;
+     background-color: white;
+    font-size: 28px;
+    color: black;
+    cursor: pointer;
+}
+.reg img
+{
+    height: 150px;
+    width: 150px;
+    margin-left: 900px;
+    margin-top: 0px;
+    
+}
+.file-upload-content input[type="button"]
+{
+     margin-left: 900px;
+    margin-top: 0px;
+}
+
+    .reg input[type="password"]
+{
+    font-size: 20px;
+    margin-left: 40px;
+    width: 300px;
+    height: 40px;
+    text-align: center;
+     border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    color: white;
+    margin-top: 20px;
+    
+    
+   
+}
+    </style>
+    </head>
+    <body>
+        <div class="img">
+        <div class="online">
+            
+    <div class="logo">
+        
+      <img src="img/logo.png">
+        <div class="l2">
+        Government Polytechnic Jalgaon
+            <h2>(An Institute of Government Of Maharashtra)</h2>
+        </div>
+        
+    </div>
+            
+            </div>
+        <input type="button" value="Back" onclick="window.location='index.html'">
+     <h1>-------------------Registration Form--------------------</h1>
+        <form action="studentreg.php" method="post"> 
+    <div class="reg">
+        
+        <input type="text" id="txt1" name="first" placeholder="First Name">
+        <input type="text" id="txt2"  name="middle"  placeholder="Middle Name">
+        <input type="text" id="txt3" name="last"   placeholder="Last Name"><br><br><br>
+        <input type="text" id="txt4" name="email"  placeholder="Email ID" onchange="e()">
+        <input type="text" id="txt5" name="mobile"  placeholder="Mobile No" onchange="m()">
+        <input type="date" id="txt6" name="DOB"  placeholder="Date of Birth" onchange="d()"><br><br><br>
+        <input type="text" id="txt7" name="enrollment"  placeholder="Enrollment No" onchange="enroll()">
+        <input type="password" id="txt8" name="password"  placeholder="Create Password" onchange="pass()">
+        <input type="password" id="txt9" name="repass"  placeholder="Confirm Password" onchange="r()" ><br><br><br><br>
+        <input type="submit"  value="Register" >
+        
+        </div>
+            </form>
+            </div>
+        <script>
+            
+            
+           window.onload=function()
+            {
+                document.addEventListener("contextmenu",function(e){e.preventDefault();},false);
+               
+            }
+           function preback()
+            {
+                window.history.forward();
+            }
+          setTimeout("preback()",0);
+            window.onunload=function(){null};
+         
+            
+            
+            
+            var fn=document.getElementById("txt1").value;
+             var mn=document.getElementById("txt2").value;
+             var ln=document.getElementById("txt3").value;
+             var ei=document.getElementById("txt4").value;
+             var mb=document.getElementById("txt5").value;
+             var db=document.getElementById("txt6").value;
+             var en=document.getElementById("txt7").value;
+             var p=document.getElementById("txt8").value;
+             var rp=document.getElementById("txt9").value;
+            function e()
+            {
+                var ei=document.getElementById("txt4").value;
+                 var regx=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})$/
+                var res=regx.test(ei)
+                if(res==false)
+                    {
+                    
+                alert("Enter valid Email Id");
+                document.getElementById("txt4").value="";
+                    }
+            }
+          
+            
+            function m()
+            {
+                var mb=document.getElementById("txt5").value;
+                 var regx=/^\d{10}$/
+                var res=regx.test(mb)
+                if(res==false)
+                    {
+                    
+                alert("Enter valid Mobile Number");
+                document.getElementById("txt5").value="";
+                    }
+            }
+          
+              function enroll()
+            {
+                var en=document.getElementById("txt7").value;
+                 var regx=/^\d{10}$/
+                var res=regx.test(en)
+                if(res==false)
+                    {
+                    
+                alert("Enter valid Enrollment Number")
+                document.getElementById("txt7").value="";
+                    }
+
+            }
+              function pass()
+            {
+                var p=document.getElementById("txt8").value;
+                
+                if(p.length<8)
+                    {
+                    
+                alert("Password must contain atleast 8 characters")
+                document.getElementById("txt8").value="";
+                    }
+
+            }
+            function r()
+            {
+                 var p=document.getElementById("txt8").value;
+                 var rp=document.getElementById("txt9").value;
+                if(rp!=p)
+                    alert("confirm Password Do not Match");
+                 document.getElementById("txt9").value="";
+                
+            }
+            
+        </script>
+    </body>
+</html

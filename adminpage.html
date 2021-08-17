@@ -1,0 +1,182 @@
+<html>
+<head>
+    <title>adminpage</title>
+ <style>
+    
+.img{
+    
+    background-size: cover;
+    
+    background-image:linear-gradient(#833ab4,#fcb045,#f14545);
+    
+    background-size: cover;
+        border: 3px solid black;
+        height: 585px;
+}
+        
+.online
+{
+    background-color: rgba(0,0,0,0.6);
+    height: 90px;
+    margin-top: 0px;
+    
+}
+.logo img
+{  
+    float: left;
+    margin-top: 0px;
+    height: 90px;
+    margin-left: 20px;
+    
+}
+.l2
+{
+    font-size: 45px;
+    text-align: bottom;
+    color: white;
+    float: right;
+    margin-right: 650px;
+    margin-top: 10px;
+    font-style: italic;
+    
+    
+    
+}
+.l3 input[type="button"]
+{
+    height: 35px;
+    width: 115px;
+    font-size: 19px;
+    margin-left: 3px;
+    
+    background-color:blue;
+    color: white;
+    cursor: pointer;
+    margin-top: 2px;
+    border: none;
+    
+}
+     
+.l3 input[type="button"]:hover
+{
+    
+    background-color:white;
+    color: black;
+    
+}
+.bt
+     {
+         float: right;
+         margin-top: -37px;
+         margin-right: 145px;
+     }
+     #bt2
+     {
+         float: left;
+         margin-top: -35px;
+     }
+    
+        .l2 h2
+            {
+                font-size: 20px;
+                margin-top: 0px;
+                margin-left: 120px;
+                color: white;
+            }
+.profile
+{
+    margin-left: 500px;
+    margin-top: 70px;
+}
+.profile h1
+{
+    color: white;
+    margin-top: -5px;
+    margin-left: -82px;
+    font-size: 50px;
+}
+h2{
+    color: darkblue;
+    font-size: 40px;
+    margin-left: 550px;
+    margin-top: 0px;
+}
+#option
+{
+    height: 34px;
+    width: 120px;
+    font-size: 20px;
+    margin-left: 0px;
+    background-color:#1c8adb ;
+    color: white;
+    cursor: pointer;
+    
+}
+#option:hover
+{
+    height: 35px;
+    width: 120px;
+    font-size: 20px;
+    margin-left: 0px;
+    background: transparent;
+    color: black;
+    cursor: pointer;
+    background-color: white;
+     transition: 0.s ease;
+}
+    </style>
+    </head>
+    <body>
+        <div class="img">
+     <div class="online">
+            
+    <div class="logo">
+        
+      <img src="img/logo.png">
+        <div class="l2">
+            Modern Education Society's 
+            <h2>College Of Engineering,Pune</h2>
+        </div>
+        
+    </div>
+            
+            </div>
+        <div class="l3">
+            <input type="button" value="Profile">
+            <input type="button" value="Student List" onclick="window.location='studentlist.php'">
+             <input type="button"   value="Attendance" onclick="window.location='stdpresent.php'">
+             
+           
+            
+        <div class="bt">
+             <input type="button"   value="Add Student" onclick="window.location='addstudent.php'">
+             <input type="button"   value="Exam Detail" onclick="window.location='examdetail.php'">
+              <input type="button" value="Question" onclick="window.location='queoperation.html'">
+             <input type="button"   value="Feedback" onclick="window.location='feedbackadmin.php'">
+            <input type="button" value=" Result" onclick="window.location='adminres.html'">
+            
+            <input type="button"   value="Logout" onclick="window.location='adminlogin.html'">
+                </div>
+            
+        </div>
+        <div class="profile">
+        <img src="img/user.png">    
+            <h1>Welcome Admin !!</h1>
+            
+        </div>
+            </div>
+        <script>
+            window.onload=function()
+            {
+                document.addEventListener("contextmenu",function(e){e.preventDefault();},false);
+            }                            // contextmenu is to prevent rigthclick
+            function preback()
+            {
+                window.history.forward();//The forward() method loads the next URL in the history list.
+            }
+        setTimeout("preback()",0);
+        window.onunload=function(){null};
+           
+        </script>
+    </body>
+</html>

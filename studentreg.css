@@ -1,0 +1,125 @@
+body{
+    
+    background-size: cover;
+    
+    background-image:linear-gradient(#f093fb,#f5576c,#4facfe);
+    
+    background-size: cover;
+}
+.logo img
+{  
+    float: left;
+    margin-top: 0px;
+    height: 90px;
+    margin-left: 20px;
+    
+}
+.online
+{
+     background-color: rgba(0,0,0,0.6);
+    height: 90px;
+    width: 1250px;
+    margin-top: 0px;
+    
+}
+.l2
+{
+    font-size: 55px;
+    text-align: bottom;
+    color: white;
+    float: right;
+    margin-right: 250px;
+    margin-top: 10px;
+    font-style: italic;
+    
+    
+    
+    
+}
+input[type="button"]
+{
+    height: 40px;
+    width: 150px;
+    margin-top: 2px;
+    cursor: pointer;
+    color: white;
+    background: #1c8adb ;
+    font-size: 20px;
+}
+input[type="button"]:hover
+{
+    color: black;
+    background: white;
+}
+h1
+{
+    margin-top: 15px;
+    margin-left: 230px;
+    color: white;
+    font-size: 40px;
+}
+.reg{
+    width: 1200px;
+    height: 480px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    margin-top: 100px;
+}
+.reg input[type="text"]
+{
+    font-size: 20px;
+    margin-left: 40px;
+    width: 300px;
+    height: 40px;
+    text-align: center;
+     border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    color: white;
+    margin-top: 20px;
+    
+    
+   
+}
+
+.reg input[type="submit"]
+{
+    margin-left: 400px;
+    height: 50px;
+    width: 300px;
+     background: transparent;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+   
+}
+.reg input[type="submit"]:hover
+{
+     margin-left: 400px;
+    height: 50px;
+    width: 300px;
+     background-color: white;
+    font-size: 28px;
+    color: black;
+    cursor: pointer;
+}
+.reg img
+{
+    height: 150px;
+    width: 150px;
+    margin-left: 900px;
+    margin-top: 0px;
+    
+}
+.file-upload-content input[type="button"]
+{
+     margin-left: 900px;
+    margin-top: 0px;
+}
