@@ -1,4 +1,4 @@
-# Online-Examination-Systemb
+# Online-Examination-System
 CURD Website Using Mysql.
 
 #Technology and Language Used: HTML5, CSS, Bootstrap, Javascript, PHP, jQuery and MYSQL Database.
